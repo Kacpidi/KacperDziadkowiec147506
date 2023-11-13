@@ -9,7 +9,7 @@ def pomnoz_przez_2_for(lista):
     for i in range(len(lista)):
         lista[i] *= 2
     return lista
-liczby = [4, 5, 6, 7, 8]
+liczby = [5, 6, 7, 8, 9]
 wynik = pomnoz_przez_2_for(liczby)
 print(wynik)
 
