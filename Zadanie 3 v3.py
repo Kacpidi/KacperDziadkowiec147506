@@ -5,6 +5,7 @@ Created on Mon Nov 13 13:02:18 2023
 @author: student
 """
 
+
 class Property:
     def __init__(self, area, rooms, price, address):
         self.area = area
@@ -13,7 +14,9 @@ class Property:
         self.address = address
 
     def __str__(self):
-        return f"Property: {self.area} sqm, {self.rooms} rooms, priced at {self.price}, located at {self.address}"
+        return f"Property: {self.area} sqm, {self.rooms} " \
+               f"rooms, priced at {self.price}, located at {self.address}"
+
 
 class House(Property):
     def __init__(self, area, rooms, price, address, plot):
@@ -21,7 +24,10 @@ class House(Property):
         self.plot = plot
 
     def __str__(self):
-        return f"House: {self.area} sqm, {self.rooms} rooms, priced at {self.price}, located at {self.address}, plot size {self.plot} sqm"
+        return f"House: {self.area} sqm, {self.rooms} rooms," \
+               f" priced at {self.price}, located at {self.address}," \
+               f" plot size {self.plot} sqm"
+
 
 class Flat(Property):
     def __init__(self, area, rooms, price, address, floor):
@@ -29,7 +35,10 @@ class Flat(Property):
         self.floor = floor
 
     def __str__(self):
-        return f"Flat: {self.area} sqm, {self.rooms} rooms, priced at {self.price}, located at {self.address}, on floor {self.floor}"
+        return f"Flat: {self.area} sqm, {self.rooms} rooms," \
+               f" priced at {self.price}, located at {self.address}, " \
+               f"on floor {self.floor}"
+
 
 house = House(500, 10, "500,000 USD", "Sikorek 3", 2000)
 
